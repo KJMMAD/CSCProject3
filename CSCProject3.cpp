@@ -20,10 +20,9 @@ int main() {
 		cout << "When you're ready, press Enter to see the answer.";
 		cin.get(ch);
 
-		cout << "The answer was: " << answer << " Continue? [Y]/[N]\n";
+		cout << "The answer was: " << answer << "\nContinue ? [Y] / [N]\n";
 		getline(cin, response);
-
-		if (response != "y") {
+		if (response != "y" && response != "Y") { //check so that a only single y or Y is accepted
 			check = false;
 		}
 		cin.ignore();
